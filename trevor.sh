@@ -5,7 +5,6 @@ if [ $# -eq 0 ]
 then
         echo "Missing options!"
         echo "(run $0 -h for help)"
-        echo ""
         exit 0
 fi
 
@@ -42,17 +41,18 @@ fi
 
 if [ $ECHO = "true2" ]
 then
-	echo "-----Ubuntu specific-----";
-	GLOB="true";
+    echo "-----Ubuntu specific-----";
+    GLOB="true";
 fi
 
 if [ $GLOB = "true" ]
 then
-	echo "-----Global settings-----";
-	cp -R .vim ~/;
-	cp .vimrc ~/;
-	echo "Vimrc";
-	cp .gitignore ~/;
-	git config --global core.excludesfile ~/.gitignore;
-	echo "GitIgnore";
+    echo "-----Global settings-----";
+    cp -R .vim ~/;
+    cp .vimrc ~/;
+    echo ".vimrc";
+    cp .gitignore ~/;
+    git config --global core.excludesfile ~/.gitignore;
+    echo ".gitignore";
+    exit 0
 fi
