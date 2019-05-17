@@ -3,12 +3,12 @@
 OS="`uname`"
 case $OS in
   'Linux')
-    echo "Linux";
+    echo "----- Linux Specific -----";
     ;;
   'Darwin')
-    echo "OSx";
+    echo "----- MacOS Specific -----";
     ;;
   *) ;;
 esac
 
-echo "end"
+echo "----- Done -----";
