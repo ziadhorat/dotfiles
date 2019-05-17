@@ -1,7 +1,5 @@
 #!/usr/bin/sh
-#
-# Examlple of using options in scripts
-#
+# Option based dot-file installer
 
 if [ $# -eq 0 ]
 then
@@ -16,15 +14,12 @@ GLOB="false"
 
 while getopts "hmu" OPTION; do
         case $OPTION in
-
                 m)
                         ECHO="true1"
                         ;;
-
                 u)
-						ECHO="true2"
-						;;
-
+			ECHO="true2"
+			;;
                 h)
                         echo "Usage:"
                         echo "$0 -m "
@@ -34,7 +29,6 @@ while getopts "hmu" OPTION; do
                         echo "   -u     For Ubuntu"
                         exit 0
                         ;;
-
         esac
 done
 
