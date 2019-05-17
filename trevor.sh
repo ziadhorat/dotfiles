@@ -36,7 +36,7 @@ if [ $ECHO = "true1" ]
 then
     echo "-----Mac specific-----";
     osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
-    echo "DarkMode enabled";
+    echo "DarkMode";
     GLOB="true";
 fi
 
@@ -51,8 +51,8 @@ then
 	echo "-----Global settings-----";
 	cp -R .vim ~/;
 	cp .vimrc ~/;
-	echo "Vimrc Done";
+	echo "Vimrc";
 	cp .gitignore ~/;
 	git config --global core.excludesfile ~/.gitignore;
-	echo "GitIgnore Done";
+	echo "GitIgnore";
 fi
