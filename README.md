@@ -1,5 +1,6 @@
 # dotfiles (ziadhorat)
 ### Type "sh trevor.sh" in a terminal on either MacOS or Linux
+##### .bashrc next
 
 Vim theme : https://github.com/morhetz/gruvbox
 
