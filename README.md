@@ -29,4 +29,6 @@ Auto Brackets :  [Auto-Pairs](https://github.com/jiangmiao/auto-pairs)
 
 Auto Complete :  [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 
->"If it takes more than 5 minutes of your time, automate."
+File Manager :  [NERDTree](https://github.com/scrooloose/nerdtree)
+
+>"If it takes more than 5 minutes, automate it."
