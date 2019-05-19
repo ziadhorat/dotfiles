@@ -1,17 +1,32 @@
-# dotfiles (ziadhorat)
-### Type `sh trevor.sh` in a terminal on either MacOS or Linux
-##### .bashrc next
+# My dotfiles
 
-Vim theme : https://github.com/morhetz/gruvbox / https://github.com/jacoborus/tender.vim
+This repo is used to install all my dotfiles and plugins/themes i like to use on a daily basis, and because i switch between PC's often.
+### Installation
+```
+git clone https://github.com/ziadhorat/dotfiles && cd dotfiles
+sh trevor.sh
+```
+Follow the on-screen instructions. (Linux/MacOS)
+## Features
+#### Unix
+Adds color to the man page
+#### MacOS
+DarkMode
+#### VimRC
+jj > Escape
+#### BashRC
+g > gcc -Wall -Werror -Wextra
+## Plugins/Themes
+Vim theme :  [GruvBox](https://github.com/morhetz/gruvbox)  /  [Tender](https://github.com/jacoborus/tender.vim)
 
-Perma alias : https://www.hostingadvice.com/how-to/set-command-aliases-linuxubuntudebian/
+WeThinkCode header :  [42header](https://github.com/pbondoer/vim-42header) 
 
-42Header : https://github.com/pbondoer/vim-42header ADD TO .bashrc : "export USER=ziadhorat"
+Status Bar :  [Airline](https://github.com/vim-airline/vim-airline)
 
-Airline (statusbar) : https://github.com/vim-airline/vim-airline
+Git Status :  [GitGutter](https://github.com/airblade/vim-gitgutter)
 
-GitGutter (Git status) : https://github.com/airblade/vim-gitgutter
+Auto Brackets :  [Auto-Pairs](https://github.com/jiangmiao/auto-pairs)
 
-AutoPairs (For brackets) : https://github.com/jiangmiao/auto-pairs
+Auto Complete :  [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 
-AutoCompletePopup : https://github.com/vim-scripts/AutoComplPop
+>"If it takes more than 5 minutes of your time, automate."
