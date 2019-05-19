@@ -8,6 +8,8 @@ set copyindent
 set smartindent
 set softtabstop=4
 set shiftwidth=4
+set tabstop=4
+set expandtab
 
 set showmatch
 set visualbell
@@ -33,3 +35,5 @@ endif
 colo tender
 let g:gitgutter_map_keys = 0
 set updatetime=100
+
+inoremap jj <ESC>
