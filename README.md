@@ -13,3 +13,5 @@ Airline (statusbar) : https://github.com/vim-airline/vim-airline
 GitGutter (Git status) : https://github.com/airblade/vim-gitgutter
 
 AutoPairs (For brackets) : https://github.com/jiangmiao/auto-pairs
+
+AutoCompletePopup : https://github.com/vim-scripts/AutoComplPop
