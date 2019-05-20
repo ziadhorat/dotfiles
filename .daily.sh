@@ -1,1 +1,3 @@
-source ~/.bashrc
+#!/usr/bin/sh
+
+exec bash
