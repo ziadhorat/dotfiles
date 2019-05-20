@@ -4,6 +4,8 @@ OS="`uname`"
 case $OS in
   'Linux')
     echo "----- Linux -----";
+    read -p 'Username: ' uservar;
+    echo "export USER=$uservar" >> ~/.bashrc;
     ;;
   'Darwin')
     echo "----- MacOS -----";
@@ -15,8 +17,6 @@ case $OS in
 esac
 
 echo "----- Global -----";
-read -p 'Username: ' uservar;
-echo "export USER=$uservar" >> ~/.bashrc;
 cat .bashrc >> ~/.bashrc
 echo "Bashrc";
 cp -R .vim ~/;
