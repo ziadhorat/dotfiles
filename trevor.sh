@@ -18,6 +18,8 @@ case $OS in
     echo "DarkMode";
     osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
     defaults write com.apple.dock static-only -bool true; killall Dock;
+	cp .bashrc ~/
+	echo "Bashrc"
     ;;
   *) ;;
 esac
@@ -25,8 +27,6 @@ esac
 echo "${blue}${bold}----- Global -----${normal}";
 echo "Github"
 git clone https://github.com/ziadhorat/WTC-LibFT ~/Work/
-cat .bashrc >> ~/.bashrc
-echo "Bashrc";
 cp -R .vim ~/;
 echo "Color + 42Header";
 cp .vimrc ~/;
