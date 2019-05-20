@@ -13,6 +13,8 @@ case $OS in
     ;;
   'Darwin')
     echo "${blue}${bold}----- MacOS -----${normal}";
+	cp .daily.sh ~/daily.sh
+	echo "Daily.sh created"
     echo "DarkMode";
     osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
     defaults write com.apple.dock static-only -bool true; killall Dock;
