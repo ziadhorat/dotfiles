@@ -1,3 +1,5 @@
+se mouse+=a
+set clipboard=unnamedplus
 set number
 set ruler
 set undolevels=1000
