@@ -8,6 +8,8 @@ sh trevor.sh
 ```
 Follow the on-screen instructions. (Linux/MacOS)
 ## Features
+#### auto_names.sh
+Gets all file names to make making makefiles easy
 #### Unix
 Adds color to the man page
 #### MacOS
