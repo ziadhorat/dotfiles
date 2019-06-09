@@ -1,38 +1,32 @@
-#!/usr/bin/sh 
+#!/usr/bin/sh
+#Dependency: run "brew install coreutils"
+#run "sh pc_monitor c4r10"
 
-bold=$(tput bold);
-blue=$(tput setaf 6);
-normal=$(tput sgr0);
+counter=0
+seat=1
+row=1
 
-OS="`uname`"
-case $OS in
-  'Linux')
-    echo "${blue}${bold}----- Linux -----${normal}";
-    read -p 'WTC Username: ' uservar;
-    echo "export USER=$uservar" >> ~/.bashrc;
-    ;;
-  'Darwin')
-    echo "${blue}${bold}----- MacOS -----${normal}";
-	cp .daily.sh ~/daily.sh
-	echo "Daily.sh created"
-    echo "DarkMode";
-    osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
-    defaults write com.apple.dock static-only -bool true; killall Dock;
-	cp .bashrc ~/
-	echo "Bashrc"
-    ;;
-  *) ;;
-esac
-
-echo "${blue}${bold}----- Global -----${normal}";
-echo "Github"
-git clone https://github.com/ziadhorat/WTC-LibFT ~/Work/
-cp -R .vim ~/;
-echo "Color + 42Header";
-cp .vimrc ~/;
-echo "Vimrc";
-cp .gitignore ~/;
-git config --global core.excludesfile ~/.gitignore;
-echo "Gitignore";
-echo "${blue}${bold}----- Finished -----${normal}";
-exit 0
+while [ ${counter} -lt 100 ]
+do
+	if gtimeout 0.01 ping $1r${row}s${seat} -c 1 | grep -q "64"
+		then printf "⚪"
+		else printf "❌"
+	fi
+	if [[ ${row} -lt 5 && ${seat} -gt 4 ]]
+	then
+			printf "\n"
+			((row++))
+			seat=0
+	fi
+	if [[ ${row} -lt 17 && ${seat} -gt 10 ]]
+	then
+			printf "\n"
+			((row++))
+			seat=0
+	fi
+	((seat++))
+	((counter++))
+	sleep 1
+#	exit
+done
+printf "\n"
