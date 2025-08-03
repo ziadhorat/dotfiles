@@ -34,3 +34,5 @@ Auto Complete :  [AutoComplPop](https://github.com/vim-scripts/AutoComplPop)
 File Manager :  [NERDTree](https://github.com/scrooloose/nerdtree)
 
 >"If it takes more than 5 minutes, automate it."
+
+>"You get what you give."
